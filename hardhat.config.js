@@ -18,6 +18,18 @@ module.exports = {
       chainId: 97,
       blockConfirmations: 1,
     },
+    ApertumTestnet: {
+      url: process.env.APERTUM_TESTNET_RPC_URL,
+      accounts: [process.env.TESTNET_DEPLOYER_PK],
+      chainId: 89898,
+      blockConfirmations: 1,
+    },
+    Apertum: {
+      url: process.env.APERTUM_RPC_URL,
+      accounts: [process.env.TESTNET_DEPLOYER_PK],
+      chainId: 2786,
+      blockConfirmations: 1,
+    },
   },
   etherscan: {
     apiKey: {
