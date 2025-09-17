@@ -103,6 +103,12 @@ contract SolidityTypeTester {
 	function addToUintArray(uint256 _val) external {
 		uintArray.push(_val);
 	}
+	// Multiple values
+    function addMultipleToUintArray(uint256[] calldata _vals) external {
+        for (uint256 i = 0; i < _vals.length; i++) {
+            uintArray.push(_vals[i]);
+        }
+    }
 
 	function addToStringArray(string calldata _val) external {
 		stringArray.push(_val);
